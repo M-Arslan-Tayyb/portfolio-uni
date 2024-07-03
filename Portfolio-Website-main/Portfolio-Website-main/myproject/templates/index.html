@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website - M Arslan</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Bree+Serif&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../static/images/other stack/logo.jpg" alt="logo">
+                    <span>Arslan</span>
+                </div>
+                <div class="navItems">
+                    <ul>
+                        <li><a href="#projectSection">Projects</a></li>
+                        <li><a href="#skills-section">Skills</a></li>
+                        <li><a href="#education-section">Education</a></li>
+                        <li><a href="#experience-section">Experience</a></li>
+                        <li><a href="#contact-section">Contact Me</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="hero">
+                {%for i in personal_data%}
+                <div class="hero-section-left">
+                    <h2 class="firstHeading">i.name</h2>
+                    <h2 class="firstHeading secHeading">I am a <span class="role"></span></h2>
+                    <p>{{i.aboutme}}</p>
+                    <div class="btn-pink">
+                        Hire Me
+                    </div>
+                    {%endfor%}
+                </div>
+                <div class="hero-section-right">
+                    <div class="absolute icons icon-dotted">
+                        <img src="../static/images/other stack/dotted_icon-removebg-preview.png" alt="">
+                    </div>
+                    <div class="absolute icons circle-icon">
+                        <img src="../static/images/other stack/circle icon.png" alt="">
+                    </div>
+                    <div class="absolute icons cube-icon">
+                        <img src="../static/images/other stack/cube_icon-removebg-preview.png" alt="" style="background-color: white;">
+                    </div>
+                    <div class="absolute icons zigzag-icon">
+                        <img src="../static/images/other stack/zigzag_icon-removebg-preview.png" alt="">
+                    </div>
+                    <div class="user-icon">
+                        <img src="../static/images/other stack/Screenshot_20220905-144706_1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="faded-text">M Arslan</div>
+            </div>
+
+            <div class="projectSection" id="projectSection">
+                <div class="mainHeading">
+                    <h2>Projects</h2>
+                </div>
+                <div class="project-area">
+                    <div class="project-card" id="project1">
+                        <div class="project-number-right">01</div>
+
+                        <!-- <img src="./images/projects/p1.png" alt="" class="bgImage"> -->
+                        <div class="content" id="content-left">
+                            <div class="skills">
+                                <img src="..static/images/projects/html-5_174854.png" alt="" class="icons">
+                                <img src="..static/images/projects/css-3_732190.png" alt="" class="icons">
+                                <img src="..static/images/projects/js_5968292.png" alt="" class="icons">
+                                <img src="..static/images/projects/react.jpg" alt="" class="icons">
+                                <img src="..static/images/projects/nodejs_919825.png" alt="" class="icons">
+
+
+                            </div>
+                            <div class="card-heading">Housing-Website</div>
+                            <div class="sub-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                modi quod hic accusantium blanditiis quam!</div>
+                            <div class="social-media">
+                                <div class="btn-pink">Read More</div>
+                                <a href="">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="project-card" id="project2">
+                        <div class="project-number-left">02</div>
+
+                        <!-- <img src="./images/projects/p1.png" alt="" class="bgImage"> -->
+                        <div class="content" id="content-right">
+                            <div class="skills">
+                                <img src="..static/images/projects/html-5_174854.png" alt="" class="icons">
+                                <img src="..static/images/projects/css-3_732190.png" alt="" class="icons">
+                                <img src="..static/images/projects/js_5968292.png" alt="" class="icons">
+                                <img src="..static/images/projects/database.jpg" alt="" class="icons">
+
+
+
+                            </div>
+                            <div class="card-heading">Hotel-Booking</div>
+                            <div class="sub-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                modi quod hic accusantium blanditiis quam!</div>
+                            <div class="social-media">
+                                <div class="btn-pink">Read More</div>
+                                <a href="">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="project-card" id="project3">
+                        <div class="project-number-right">03</div>
+
+                        <!-- <img src="./images/projects/p1.png" alt="" class="bgImage"> -->
+                        <div class="content" id="content-left">
+                            <div class="skills">
+                                <img src="..static/images/projects/html-5_174854.png" alt="" class="icons">
+                                <img src="..static/images/projects/css-3_732190.png" alt="" class="icons">
+                                <img src="..static/images/projects/js_5968292.png" alt="" class="icons">
+
+                                <img src="..static/images/projects/icons8-material-ui-480.png" alt="" class="icons">
+
+
+
+
+                            </div>
+                            <div class="card-heading">Website-Designer</div>
+                            <div class="sub-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                                modi quod hic accusantium blanditiis quam!</div>
+
+                            <div class="social-media">
+                                <div class="btn-pink">Read More</div>
+                                <a href="">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-github"></i>
+                                    <!-- <a target="_blank" href="https://icons8.com/icon/jD-fJzVguBmw/redux">Redux</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="project-card" id="project4">
+                        <div class="project-number-left">04</div>
+
+                        <!-- <img src="./images/projects/p1.png" alt="" class="bgImage"> -->
+                        <div class="content" id="content-right">
+                            <div class="skills">
+                                <img src="..static/images/projects/html-5_174854.png" alt="" class="icons">
+                                <img src="..static/images/projects/css-3_732190.png" alt="" class="icons">
+
+
+                            </div>
+                            <div class="card-heading">Image-Gallery</div>
+                            <div class="sub-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Laboriosam modi quod hic accusantium blanditiis quam!</div>
+                            <div class="social-media">
+                                <div class="btn-pink">Read More</div>
+                                <a href="">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-section" id="skills-section">
+
+                <div class="skill-container">
+                    <div class="skill-container-left" id="left">
+                        <div class="skill-heading">
+                            <h2><span>M</span>e and <br>MyTeach Stack</h2>
+                        </div>
+                        {%for i in personal_data%}
+                        <div class="skill-subHeading">
+                            <p>{{i.teach_stack}}</p>
+                    {%endfor%}
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
+                                doloremque aspernatur, maiores voluptatum minus laudantium?
+                                Perspiciatis accusamus minima porro dolores necessitatibus, magni
+                                dolorem et qui veniam nulla sequi molestiae maxime.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quidem
+                                quos ullam veritatis voluptates tenetur qui ipsa nulla culpa itaque?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skill-container-right" id="right">
+                        <div class="all-skills-icons">
+                            <div class="four-divs">
+                                <img src="..static/images/projects/html-5_174854.png" alt="" class="icons-skill">
+                                <img src="..static/images/projects/css-3_732190.png" alt="" class="icons-skill">
+                                <img src="..static/images/projects/js_5968292.png" alt="" class="icons-skill">
+                                <img src="..static/images/projects/react.jpg" alt="" class="icons-skill">
+                            </div>
+                            <div class="four-divs">
+                                <img src="..static/images/projects/nodejs_919825.png" alt="" class="icons-skill">
+                                <img src="..static/images/other stack/github.jpg" alt="" class="icons-skill">
+                                <img src="..static/images/other stack/icons8-bootstrap-240.png" alt="" class="icons-skill">
+                                <img src="..static/images/other stack/icons8-material-ui-480.png" alt="" class="icons-skill">
+                            </div>
+                            <div class="four-divs">
+                                <img src="..static/images/other stack/icons8-redux-240.png" alt="" class="icons-skill">
+                                <img src="..static/images/other stack/icons8-bash-96.png" alt="" class="icons-skill">
+                                <img src="..static/images/other stack/icons8-docker-144.png" alt="" class="icons-skill">
+                                <img src="..static/images/other stack/icons8-express-js-100.png" alt="" class="icons-skill">
+                            </div>
+                            <div class="four-divs">
+                                <img src="..static/images/other stack/icons8-git-96.png" alt="" class="icons-skill">
+                                <img src="..static/images/other stack/icons8-graphql-96.png" alt="" class="icons-skill">
+                                <img src="..static/images/other stack/icons8-kubernetes-96.png" alt="" class="icons-skill">
+                                <img src="..static/images/other stack/mongo db.png" alt="" class="icons-skill">
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="faded-text" id="faded">
+                        Skills
+                    </div>
+                </div>
+
+            </div>
+            <!-- Education Section -->
+<div class="education-section" id="education-section">
+    <div class="mainHeading">
+        <h2>Education</h2>
+    </div>
+    <div class="education-container">
+        <div class="education-item">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <p>University of Management and Technology (UMT), Lahore, Pakistan</p>
+            <p>CGPA: 3.29/4.0</p>
+            <p>7th Semester</p>
+        </div>
+    </div>
+</div>
+
+<!-- Experience Section -->
+<div class="experience-section" id="experience-section">
+    <div class="mainHeading">
+        <h2>Experience</h2>
+    </div>
+    <div class="experience-container">
+        <div class="experience-item">
+            <h3>Frontend Developer</h3>
+            <ul>
+                {%for i in personal_data%}
+
+                <li><strong>DevDetective:</strong>{{i.experience}}</li>
+                {%endfor%}
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Volunteer Work</h3>
+            <p>Volunteered at Pakistan Citizen Alliance (PCA), where I raised funds for community projects and received a certificate of appreciation.</p>
+        </div>
+    </div>
+</div>
+
+
+            <div class="contact-section" id="contact-section">
+                <div class="contact-container">
+                    <div class="skill-heading contact-heading">
+                        <h2>Contact Me</h2>
+                    </div>
+                    <div class="contact-subheading">
+                        <h2>Questions, Thoughts, Or Just Want to Say Hello?</h2>
+                    </div>
+
+
+
+                    <!-- form -->
+
+
+                    <form method="post" action="{% url 'saveform'%}" class="form-container">
+                        {% csrf_token %}
+                        <div class="elements-of-form">
+                            <input type="text" name="name" id="name" class="form-elements" placeholder="  Enter your name">
+                            <input type="email" name="email" id="email" class="form-elements"
+                                placeholder="  Enter your email address">
+                            <input type="text" name="subject" id="subject" class="form-elements"
+                                placeholder="  Enter your subject">
+                            <textarea name="message" id="message" cols="30" rows="10"
+                                placeholder="  Enter your message"></textarea>
+                            <button type="submit" class="btn-pink" id="btn-p"> Send Messgae <i
+                                    class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <div class="footer-container">
+                    <div class="faded-text" id="faded-of-footer">
+                        M Arslan
+                    </div>
+                    <div class="footer-bar">
+                        <div class="footer-links">
+                            <a href="#projectSection">Project</a>
+                            <a href="#skills-section">Skills</a>
+                            <a href="#contact-section">Contact Me</a>
+                        </div>
+                        <div class="footer-social ">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData = new Typed(".role", {
+            strings: [
+                "Full Stack Developer",
+                "Web Developer",
+                "UI-UX Designer",
+                "Backend Developer",
+                "Coder",
+            ],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1000,
+        });
+    </script>
+</body>
+
+</html>
